@@ -25,7 +25,6 @@ class LinkedMacro5e {
 
   static assignMacro = async (item, slot, mode) => {
     function command() {
-      const vanilla = mode === 'vanillaRoll' ? "true" : "false"
       return `
         // HotbarUses5e: ActorID="${item.actorId}" ItemID="${item.data._id}"
         game.dnd5e.rollItemMacro("${item.data.name}", "${item.actorId}", "${item.data._id}")
