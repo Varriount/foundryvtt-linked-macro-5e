@@ -40,7 +40,7 @@ class LinkedMacro5e {
           return itemToRoll.executeMacro()
         }
 
-        game.dnd5e.rollItemMacro("${itemToRoll.data.name}", "${actorToRoll.data._id}", "${itemToRoll.data._id}")
+        game.dnd5e.rollItemMacro(itemToRoll.data.name, actorToRoll.data._id, itemToRoll.data._id)
       `
     }
 
